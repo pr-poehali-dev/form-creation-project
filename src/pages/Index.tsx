@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import InfoForm from "@/components/InfoForm";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -348,6 +349,13 @@ const Index = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Info Form Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <InfoForm />
         </div>
       </section>
 
